@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>form</title>
+</head>
+<body>
+<p><b>会员申请</b></p>
+<form name="form1" method="post" action="">
+    <p>欢迎您申请成为会员，申请过程不收取任何费用，我们承诺保护您的信息安全，
+不会将其提供给任何第三方。<br>
+    注：*为必填内容。</p>
+    <p>您的基本信息：</p>
+    <p>*姓名：    
+        <input type="text" name="myname" size="24" value="aaaaaa">
+    </p>
+    <p>*年龄：    
+        <input type="number" name="myage" maxlength="3">
+    </p>
+    <p>性别：    
+        <input type="radio" name="sex" value="male">
+        男
+        <input type="radio" name="sex" value="famale">
+        女
+    </p>
+    <p>兴趣爱好：
+        <label>   
+            <input type="checkbox" name="myliking" id= value="myliking0" "reading">
+            看书</label>
+        <label>
+            <input type="checkbox" name="myliking" id= value="myliking1" value="listening_music">
+            听音乐</label>
+        <label>
+            <input type="checkbox" name="myliking" id= value="myliking2" value="see_movie">
+            看电影</label>
+        <label>
+            <input type="checkbox" name="myliking" id= value="myliking3" value="sports">
+            运动</label>
+    </p>
+    <p>邮箱：    
+        <input type="email" id="mymail" required>
+    </p>
+    <p>*密码：
+        <input type="password" name="my_password0" size="24">
+    </p>
+    <p>*确认密码：
+        <input type="password" name="my_password1" size="24">
+    </p>
+    <p>注意：密码不可见，用字符代替显示。</p>
+    <p><span class="style1">*</span>国家：
+        <select name="national">
+            <option value="1" selected>中华人民共和国</option>
+            <option value="2">其他国家和地区</option>
+        </select>
+    </p>
+    <p><span class="style1">*</span>省份和区域：
+        <select name="district">
+            <option selected>请选择</option>
+            <option value="1">北京</option>
+            <option value="2">上海</option>
+            <option value="3">天津</option>
+            <option value="4">重庆</option>
+            <option value="5">东北</option>
+            <option value="6">华北</option>
+            <option value="7">西北</option>
+            <option value="8">西南</option>
+            <option value="9">华中</option>
+            <option value="10">华东</option>
+            <option value="11">华南</option>
+            <option value="10">港澳台</option>
+            <option value="11">其他区</option>
+        </select>
+    </p>
+    <p>申请理由：
+        <label for="mytextarea"></label>
+        <textarea name="textarea" rows="4" cols="30" id="mytextarea"></textarea>
+    </p>
+    <p>
+        <input type="submit" name="mysubmit" value="提交">
+        <input type="reset" name="myreset" id="myreset" value="重置">
+    </p>
+</form>
+</body>
+</html>
